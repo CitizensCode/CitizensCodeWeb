@@ -1,5 +1,6 @@
 url: http://www.citizenscode.com
 baseurl: 
+host: 192.168.0.38
 
 # Site settings
 title: Citizens Code

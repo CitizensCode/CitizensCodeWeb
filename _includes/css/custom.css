@@ -1,19 +1,23 @@
-img.mainlogo {
-    height: 50px;
-}
-
 .navbar-brand {
     padding-top: 10px;
 }
 
 header .intro-lead-in {
     color: #fcb232;
+    text-shadow: 1px 0px #333;
 }
 
-video#bgvid {
-    position: fixed; right: 0; bottom: 0;
-    min-width: 100%; min-height: 100%;
-    width: auto; height: auto; z-index: -100;
-    background: url(./img/header-bg.jpg) no-repeat;
-    background-size: cover;
+header {
+    background-image: url(./img/header-bg.jpg);
+}
+
+@media screen and (max-width:1024px) {
+    header {background-image: url(./img/header-bg1024.jpg);}
+}
+
+@media screen and (max-width: 768px) {
+    .btn-xl {
+        font-size: 14px;
+        padding: 10px 15px;
+    }
 }
