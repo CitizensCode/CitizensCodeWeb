@@ -20,6 +20,10 @@ header {
         font-size: 14px;
         padding: 10px 15px;
     }
+    .portfolio-modal .modal-content h2 {
+        margin-bottom: 15px;
+        font-size: 2em;
+}
 }
 
 .row.typeform {
@@ -30,4 +34,20 @@ header {
 
 section#memberwork {
     padding-bottom: 70px;
+    padding-top: 140px;
+}
+
+#memberwork h2.section-heading {
+    margin-bottom: 30px;
+}
+
+a.typeform-share.link {
+    color: white;
+    width: 100%;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.row.typeform {
+    background-color: #49c15b;
+    margin: 35px 0 0 0;
 }

@@ -297,17 +297,22 @@ header .intro-text .intro-lead-in {
     font-size: 22px;
     font-style: italic;
     line-height: 22px;
-    border-radius: 5px;
     padding: 5px 0px;
+    background-color: #49c15b;
+    background-color: #feb317;
+    color: white;
 }
 
 header .intro-text .intro-heading {
-    margin-bottom: 25px;
+    margin-bottom: 0px;
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 50px;
     font-weight: 700;
     line-height: 50px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    background-color: #bf1d29;
 }
 
 @media(min-width:768px) {
@@ -326,13 +331,16 @@ header .intro-text .intro-heading {
     }
 
     header .intro-text .intro-heading {
-        margin-bottom: 20px;
+        margin-bottom: 0px;
         text-transform: uppercase;
         font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
         font-size: 105px;
         font-weight: 700;
         text-shadow: 1px 0px #333;
         line-height: 95px;
+        padding-bottom: 5px;
+        padding-top: 5px;
+        background-color: #bf1d29;
     }
 }
 
@@ -343,8 +351,11 @@ section {
 
 section h2.section-heading {
     margin-top: 0;
-    margin-bottom: 15px;
+    margin-bottom: 0px;
     font-size: 40px;
+    background-color: #49c15b;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 section h3.section-subheading {
@@ -354,6 +365,10 @@ section h3.section-subheading {
     font-size: 22px;
     font-style: italic;
     font-weight: 400;
+    background-color: #feb317;
+    color: #333;
+    padding: 10px;
+    margin-top: 0;
 }
 
 @media(min-width:768px) {
@@ -426,6 +441,10 @@ section h3.section-subheading {
 #memberwork .portfolio-item .portfolio-caption h4 {
     margin: 0;
     text-transform: none;
+    background-color: #feb317;
+    color: white;
+    padding-top: 3px;
+    padding-bottom: 3px;
 }
 
 #memberwork .portfolio-item .portfolio-caption p {
@@ -434,7 +453,9 @@ section h3.section-subheading {
     font-size: 14px;
     font-style: italic;
     line-height: 1.1;
-    margin-top: 0.3em;
+    margin-top: 0;
+    color: #333;
+    padding: 3px;
 }
 
 #memberwork * {
@@ -835,6 +856,7 @@ ul.social-buttons li a:active {
     height: 75px;
     background-color: transparent;
     cursor: pointer;
+    display:none;
 }
 
 .portfolio-modal .close-modal:hover {

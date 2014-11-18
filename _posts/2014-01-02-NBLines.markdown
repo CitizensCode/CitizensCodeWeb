@@ -1,6 +1,6 @@
 ---
-title: NB Property Lines Art
-subtitle: A line graph showing the density of property numbers in the province.
+title: Property Lines Art
+subtitle: A line graph showing the density of property ID numbers in the province.
 layout: default
 modal-id: 2
 img: nbproperties.jpg
