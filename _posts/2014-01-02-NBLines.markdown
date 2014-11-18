@@ -1,0 +1,11 @@
+---
+title: NB Property Lines Art
+subtitle: A line graph showing the density of property numbers in the province.
+layout: default
+modal-id: 2
+img: nbproperties.jpg
+thumbnail: nbproperties-thumbnail.jpg
+alt: image-alt
+description: Sometimes data just needs to be made beautiful. In this case, a Citizens Code member reverse-engineered a piece of data art by James Cheshire to use for creating a print of New Brunswick using property data.
+
+---
