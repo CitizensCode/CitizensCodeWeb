@@ -1,4 +1,4 @@
-url: http://www.citizenscode.com
+url: http://www.citizenscode.org
 baseurl: 
 
 # Site settings
@@ -23,8 +23,8 @@ social:
 
 # Postal address (add as many lines as necessary)
 address:
-  - line: 3481 Melrose Place
-  - line: Beverly Hills, CA 90210
+  - line: 469 King Street
+  - line: Fredericton, NB, Canada
 
 # Build settings
 markdown: kramdown
