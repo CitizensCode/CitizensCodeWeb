@@ -7,10 +7,76 @@
     <!-- Plugin JavaScript -->
     <script src="{{ "/js/jquery.easing.min.js" | prepend: site.baseurl }}"></script>
     <script src="{{ "/js/classie.js" | prepend: site.baseurl }}"></script>
-    <script src="{{ "/js/cbpAnimatedHeader.js" | prepend: site.baseurl }}"></script>
+        <script>
+        var cbpAnimatedHeader = (function() {
+
+        var docElem = document.documentElement,
+            header = document.querySelector( '.navbar-fixed-top' ),
+            didScroll = false,
+            changeHeaderOn = 300;
+
+        function init() {
+            window.addEventListener( 'scroll', function( event ) {
+                if( !didScroll ) {
+                    didScroll = true;
+                    setTimeout( scrollPage, 250 );
+                }
+            }, false );
+        }
+
+        function scrollPage() {
+            var sy = scrollY();
+            if ( sy >= changeHeaderOn ) {
+                classie.add( header, 'navbar-shrink' );
+            }
+            else {
+                classie.remove( header, 'navbar-shrink' );
+            }
+            didScroll = false;
+        }
+
+        function scrollY() {
+            return window.pageYOffset || docElem.scrollTop;
+        }
+
+        init();
+
+    })();
+    </script>
 
     <!-- Custom Theme JavaScript -->
-    <script src="{{ "/js/agency.js" | prepend: site.baseurl }}"></script>
+        <script>
+        $(function() {
+            $('a.page-scroll').bind('click', function(event) {
+                var $anchor = $(this);
+                $('html, body').stop().animate({
+                    scrollTop: $($anchor.attr('href')).offset().top
+                }, 1500, 'easeInOutExpo');
+                event.preventDefault();
+            });
+        });
+
+        // Highlight the top nav as scrolling occurs
+        $('body').scrollspy({
+            target: '.navbar-fixed-top'
+        })
+
+        // Closes the Responsive Menu on Menu Item Click
+        $('.navbar-collapse ul li a').click(function() {
+            $('.navbar-toggle:visible').click();
+        });
+
+        $('div.modal').on('show.bs.modal', function() {
+            var modal = this;
+            var hash = modal.id;
+            window.location.hash = hash;
+            window.onhashchange = function() {
+                if (!location.hash){
+                    $(modal).modal('hide');
+                }
+            }
+        });
+    </script>
 
     <script>(function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'share.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}})()</script>
 
