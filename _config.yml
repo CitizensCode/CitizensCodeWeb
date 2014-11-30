@@ -25,6 +25,7 @@ social:
 address:
   - line: 469 King Street
   - line: Fredericton, NB, Canada
+  - line: E3B 1E5
 
 # Build settings
 markdown: kramdown
