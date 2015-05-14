@@ -19,7 +19,7 @@ social:
   # - title: twitter
   #   url: http://twitter.com/citizenscode
   - title: facebook
-  url: https://www.facebook.com/CitizensCodeOrg
+    url: https://www.facebook.com/CitizensCodeOrg
 
 # Postal address (add as many lines as necessary)
 address:
