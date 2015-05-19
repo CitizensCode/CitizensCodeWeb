@@ -4,7 +4,7 @@ baseurl:
 # Site settings
 title: Citizens Code
 email: ryan.brideau@gmail.com
-description: "Citizens Code is a creative outlet for technical citizens. We work with open data to advance public policy, raise the level of civic dialog, and to improve our cities."
+description: "Citizen-led commentary on issues of public importance."
 
 # Color settings (hex-codes without the leading hash-tag)
 color:
