@@ -23,7 +23,15 @@ header {
     .portfolio-modal .modal-content h2 {
         margin-bottom: 15px;
         font-size: 2em;
-}
+    }
+    .nav>li {
+        background: rgba(50, 50, 50, 0.69);
+    }
+    
+    .navbar-default .nav li a:hover, .navbar-default .nav li a:focus {
+        outline: 0;
+        color: #D6D6D6;
+    }
 }
 
 
@@ -59,11 +67,3 @@ a.typeform-share.link, a.joinin.link {
     padding: 5px 0;
 }
 
-.nav>li {
-    background: rgba(50, 50, 50, 0.69);
-}
-
-.navbar-default .nav li a:hover, .navbar-default .nav li a:focus {
-    outline: 0;
-    color: #D6D6D6;
-}
